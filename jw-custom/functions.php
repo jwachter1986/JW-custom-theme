@@ -23,5 +23,6 @@ function jw_custom_theme_setup() {
 
 add_action('init', 'jw_custom_theme_setup');
 
-add_theme_support('custom-background');
-add_theme_support('custom-header');
+add_theme_support('custom-background'); // adds background image to customizer
+add_theme_support('custom-header'); // adds custom header to customizer
+add_theme_support('post-thumbnails'); // adds featured images for blog posts
