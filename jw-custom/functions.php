@@ -4,8 +4,10 @@
 
 function jw_script_enqueue() {
 
-      wp_enqueue_style( 'jw-custom-style', get_stylesheet_directory_uri() .'/css/jw-custom.css', '1.0.0', true );
-      wp_enqueue_script('jw-custom-js', get_stylesheet_directory_uri() .'/js/jw-custom.js', array(), '1.0.0', true );
+      wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() .'/css/bootstrap.min.css');
+      wp_enqueue_style( 'jw-custom-style', get_stylesheet_directory_uri() .'/css/jw-custom.css','1.0.0', true ); // custom css
+      wp_enqueue_script( 'bootstrap', get_stylesheet_directory_uri() .'/js/bootstrap.min.js', array(), '4.1.1', true );
+      wp_enqueue_script( 'jw-custom-script', get_stylesheet_directory_uri() .'/js/jw-custom.js', array(), '1.0.0', true ); // custom js
 
 }
 
